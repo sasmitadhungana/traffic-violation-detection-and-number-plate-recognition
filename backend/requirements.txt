@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+pydantic
+torch
+torchvision
+ultralytics
+numpy
+pymongo
+python-dotenv
+passlib[bcrypt]

@@ -1,0 +1,46 @@
+/* Custom styles for the Dashboard */
+
+.dashboard-title {
+  background: linear-gradient(135deg, #312e81 0%, #4f46e5 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding-bottom: 0.1em; /* Prevents lower parts of letters from clipping */
+}
+
+.stat-card-custom {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  background: linear-gradient(to bottom right, #ffffff, #fdfbff);
+}
+
+.stat-card-custom:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.1), 0 10px 10px -5px rgba(79, 70, 229, 0.04);
+  border-color: #e0e7ff;
+}
+
+.stat-card-custom:hover .icon-pulse {
+  animation: gentle-pulse 2s infinite ease-in-out;
+}
+
+@keyframes gentle-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); opacity: 0.08; }
+  100% { transform: scale(1); }
+}
+
+.recent-activity-container {
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+}
+
+.empty-state-dashed {
+  background-color: #f8fafc;
+  transition: background-color 0.3s ease;
+}
+
+.empty-state-dashed:hover {
+  background-color: #f3f4f6;
+}
